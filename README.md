@@ -1,6 +1,6 @@
-# Task-Oriented Semantic Communication (ToSC): Reference Implementations
+# Task-Oriented Semantic Communication (ToSC)
 
-Code accompanying the survey **"Towards Task-Oriented Semantic Communication: A Survey on Technologies, Opportunities, and Challenges"** by Exaud Tarimo, Huanlai Xing, Jincheng Peng, Li Feng, Lexi Xu, and Amir Rehman (Southwest Jiaotong University / China United Network Communications Corporation).
+This is the survey **"Towards Task-Oriented Semantic Communication: A Survey on Technologies, Opportunities, and Challenges"** by Exaud Tarimo, Huanlai Xing, Jincheng Peng, Li Feng, Lexi Xu, and Amir Rehman (Southwest Jiaotong University / China United Network Communications Corporation).
 
 Task-Oriented Semantic Communication (ToSC) reduces communication cost by transmitting only the information a downstream task needs, instead of reconstructing raw signals bit-for-bit. The survey covers theoretical foundations, system architectures (end-to-end, multi-user, distributed), resource optimization (edge inference, federated edge learning), benchmark comparisons, and applications. This repository provides runnable reference code for the two algorithmic building blocks presented in the paper.
 
