@@ -1,4 +1,4 @@
-# Task-Oriented Semantic Communication (ToSC)
+# Towards Task-Oriented Semantic Communication: A Survey on Technologies, Opportunities, and Challenges
 
 This is the survey **"Towards Task-Oriented Semantic Communication: A Survey on Technologies, Opportunities, and Challenges"** by Exaud Tarimo, Huanlai Xing, Jincheng Peng, Li Feng, Lexi Xu, and Amir Rehman (Southwest Jiaotong University / China United Network Communications Corporation).
 
