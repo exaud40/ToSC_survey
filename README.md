@@ -13,7 +13,7 @@ Task-Oriented Semantic Communication (ToSC) reduces communication cost by transm
 
 ### `tosc_vib.py`: task-oriented feature encoding
 
-Each device observes one view `x_k`, extracts features, and produces a Gaussian latent `z_k = mu_k + sigma_k * eps`. The code is power-normalised, sent over an AWGN channel, and the edge server concatenates all received `z_k` for task inference. Training minimises the IB loss from Table 6:
+Each device observes one view `x_k`, extracts features, and produces a Gaussian latent `z_k = mu_k + sigma_k * eps`. The code is power-normalized, sent over an AWGN channel, and the edge server concatenates all received `z_k` for task inference. Training minimizes the IB loss from Table 6:
 
 ```
 L = CE(y, y_hat) + beta * KL( q(z|x) || N(0, I) )
@@ -59,7 +59,7 @@ Run either script with `-h` for all options.
 ## Notes and limitations
 
 - Both scripts use **synthetic data** so they run with no downloads. They demonstrate the algorithms; they do not reproduce the benchmark numbers in the survey's tables and figures (ImageNet, CIFAR, LibriSpeech, Europarl, etc.). Replace `make_multiview` (in `tosc_vib.py`) or `make_data` / `local_sgd` (in `scc_ra.py`) with your own dataset and model.
-- `scc_ra.py` uses tabular Q-learning with discretised states and actions. The channel, sensing, and latency models are simple normalised assumptions documented in the file header, because the manuscript does not fix them.
+- `scc_ra.py` uses tabular Q-learning with discretized states and actions. The channel, sensing, and latency models are simple normalized assumptions documented in the file header, because the manuscript does not fix them.
 - In Algorithm 1, `alpha` is the epsilon decay factor; the Q-learning step size is a separate parameter (`q_lr`).
 
 ## Research roadmap (from the survey's outlook)
@@ -70,9 +70,9 @@ The survey identifies the following open directions, which this codebase is mean
 2. **Continual learning on devices**: accumulating new task knowledge and discarding outdated information using parameter-efficient fine-tuning, federated continual learning, and semantic knowledge distillation.
 3. **Cooperative multi-agent reasoning**: exchanging contextual and causal explanations, not just observations, in representations that are interpretable and robust to partial observability and channel noise.
 4. **AI-native 6G co-design**: cross-layer design with reconfigurable intelligent surfaces (RIS) and digital-twin-assisted optimization so encoders adapt to channel state and topology.
-5. **Unequal error protection and adaptive JSCC**: prioritising task-critical features via adaptive power allocation or coding redundancy, and RL-based schedulers coordinating compression with cross-layer resources in multi-user, multi-task settings.
+5. **Unequal error protection and adaptive JSCC**: prioritizing task-critical features via adaptive power allocation or coding redundancy, and RL-based schedulers coordinating compression with cross-layer resources in multi-user, multi-task settings.
 6. **Embodied AI agents**: control-aware semantic metrics, stability-guaranteed semantic adaptation, and analysis of how semantic distortion affects closed-loop control (autonomous vehicles, UAV swarms, collaborative robots).
-7. **Standardised benchmarks** covering modalities, SNRs, and inference tasks, so ToSC methods can be compared fairly.
+7. ** Standardized benchmarks** covering modalities, SNRs, and inference tasks, so ToSC methods can be compared fairly.
 
 The paper also anticipates that LLM-powered encoders may transmit compressed reasoning states, intent representations, or task-conditioned latent tokens rather than raw features.
 
@@ -84,8 +84,8 @@ If you use this code, please cite the survey (update with final publication deta
 @article{tarimo_tosc_survey,
   title   = {Towards Task-Oriented Semantic Communication: A Survey on Technologies, Opportunities, and Challenges},
   author  = {Tarimo, Exaud and Xing, Huanlai and Peng, Jincheng and Feng, Li and Xu, Lexi and Rehman, Amir},
-  journal = {TODO: venue},
-  year    = {TODO}
+  journal = {TBD},
+  year    = {TBD}
 }
 ```
 
